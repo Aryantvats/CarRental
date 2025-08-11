@@ -106,7 +106,7 @@ export const changeBookingStatus = async (req, res) => {
         const { _id } = req.user;
         const { bookingId, status } = req.body;
 
-        const booking = await Booking.findById({ bookingId });
+        const booking = await Booking.findById(bookingId );
 
         if (booking.owner.toString() !== _id.toString()) {
             return res.json({ success: false, message: "Not Authorized" });

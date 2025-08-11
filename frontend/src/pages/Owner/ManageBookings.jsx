@@ -65,8 +65,7 @@ const ManageBookings = () => {
                   
                 </td>
 
-                <td className='p-3 max-md:hidden'>{booking.pickupDate.split('T')[0]} to
-                  {booking.returnDate.split('T')[0]}</td>
+                <td className='p-3 max-md:hidden'>{booking.pickupDate.split('T')[0]} to {booking.returnDate.split('T')[0]}</td>
                 
                 <td className='p-3'>{currency}{booking.price}</td>
                 
