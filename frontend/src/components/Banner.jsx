@@ -13,8 +13,8 @@ const Banner = () => {
       pt-10 bg-gradient-to-r from-[#0558FE] to-[#A9CFFF] max-w-6xl mx-3 md:mx-auto rounded-2xl overflow-hidden
     '>
           <div className='text-white'>
-              <h2 className='text-3xl font-medium'>Do You Own a Luxury Car?</h2>
-              <p className='mt-2'>Monetize your vehicle effortlessly by listing it on CarRental.</p>
+              <h2 className='text-3xl font-medium'>Do You Own a Luxury Car ?</h2>
+              <p className='mt-2'>Monetize your vehicle effortlessly by listing it on RideOn.</p>
               <p className='max-w-130'>We take care of insurance, driver verification and secure payments -- 
                   so you can earn passive income, stress-free.
               </p>
