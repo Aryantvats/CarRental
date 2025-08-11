@@ -12,9 +12,9 @@ const bookingSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Car',
     required: true
-    },
+  },
   owner: {
-      type: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true
   },
@@ -35,8 +35,9 @@ const bookingSchema = new mongoose.Schema({
     enum: ['pending', 'confirmed', 'cancelled'],
     default: 'pending'
   }
-},{timestamps:true});
+}, { timestamps: true });
 
-const Booking = mongoose.model('Booking', bookingSchema);
+// ✅ Only define the model if it doesn't already exist
+const Booking = mongoose.models.Booking || mongoose.model('Booking', bookingSchema);
 
 export default Booking;
